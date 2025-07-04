@@ -139,6 +139,11 @@ ol {
 	letter-spacing: 2px;
 }
 
+.primary-btn:hover {
+	opacity: .7;
+	transition: opacity .3s linear;
+}
+
 .site-btn {
 	font-size: 14px;
 	color: #ffffff;
@@ -148,6 +153,11 @@ ol {
 	padding: 13px 30px 12px;
 	background: #7fad39;
 	border: none;
+}
+
+.site-btn:hover {
+	opacity: .7;
+	transition: opacity .3s linear;
 }
 
 /* Preloder */
@@ -754,6 +764,12 @@ ol {
 	display: block;
 }
 
+.categories__item h5 a:hover {
+	background: #7fad39;
+	color: #ffffff;
+	transition: all .3s linear;
+}
+
 .categories__slider .col-lg-3 {
 	max-width: 100%;
 }
@@ -966,6 +982,8 @@ ol {
 	float: left;
 	margin-right: 26px;
 }
+
+
 
 .latest-product__item__pic img {
 	height: 110px;
@@ -1613,6 +1631,13 @@ ol {
 	-ms-transition: all, 0.3s;
 	-o-transition: all, 0.3s;
 	transition: all, 0.3s;
+}
+
+.product__pagination a.is-active,
+.blog__pagination a.is-active {
+	background: #7fad39;
+	border-color: #7fad39;
+	color: #ffffff;
 }
 
 .product__pagination a:hover,
