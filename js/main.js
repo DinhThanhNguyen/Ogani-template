@@ -239,8 +239,6 @@ function validateFormCheckout() {
         }
     })
 }
-validateFormCheckout()
-
 function validateContact() {
     Validator({
         form: '#form-contact',
@@ -258,4 +256,9 @@ function validateContact() {
         }
     })
 }
-validateContact()
+if($('#form-checkout').length) {
+    validateFormCheckout()
+}
+if($('#form-contact').length) {
+    validateContact()
+}

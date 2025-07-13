@@ -70,7 +70,7 @@
                 <li class="active"><a href="/shop-grid.html">Shop</a></li>
                 <li>Pages
                     <ul class="header__menu__dropdown">
-                        <li><a href="/shop-details.html">Shop Details</a></li>
+                        <li><a href="/product-details.html">Shop Details</a></li>
                         <li><a href="/shoping-cart.html">Shoping Cart</a></li>
                         <li><a href="/checkout.html">Check Out</a></li>
                     </ul>
@@ -136,7 +136,7 @@
                             <li class="active"><a href="/shop-grid.html">Shop</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="/shop-details.html">Shop Details</a></li>
+                                    <li><a href="/product-details.html">Shop Details</a></li>
                                     <li><a href="/shoping-cart.html">Shoping Cart</a></li>
                                     <li><a href="/checkout.html">Check Out</a></li>
                                 </ul>
@@ -531,13 +531,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" id="product-list">
                         <div class="col-lg-4 col-md-6 col-sm-6 product__item">
                             <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
+                                <a href="/product-details.html" class="product__item__link"></a>
                                 <ul class="product__item__pic__hover">
                                     <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><button onclick="addToCart('Crab Pool Security', 'img/product/product-1.jpg', 30)"><i class="fa fa-shopping-cart"></i></button></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
@@ -547,144 +548,155 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 product__item">
                             <div class="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
+                                <a href="/product-details.html" class="product__item__link"></a>
                                 <ul class="product__item__pic__hover">
                                     <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><button onclick="addToCart('Bananas', 'img/product/product-2.jpg', 30)"><i class="fa fa-shopping-cart"></i></button></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
-                                <h6><a href="#">Crab Pool Security</a></h6>
+                                <h6><a href="#">Bananas</a></h6>
                                 <h5>$30.00</h5>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 product__item">
                             <div class="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
+                                <a href="/product-details.html" class="product__item__link"></a>
                                 <ul class="product__item__pic__hover">
                                     <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><button onclick="addToCart('Pink Guava', 'img/product/product-3.jpg', 30)"><i class="fa fa-shopping-cart"></i></button></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
-                                <h6><a href="#">Crab Pool Security</a></h6>
+                                <h6><a href="#">Pink Guava</a></h6>
                                 <h5>$30.00</h5>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 product__item">
                             <div class="product__item__pic set-bg" data-setbg="img/product/product-4.jpg">
+                                <a href="/product-details.html" class="product__item__link"></a>
                                 <ul class="product__item__pic__hover">
                                     <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><button onclick="addToCart('Grape', 'img/product/product-4.jpg', 30)"><i class="fa fa-shopping-cart"></i></button></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
-                                <h6><a href="#">Crab Pool Security</a></h6>
+                                <h6><a href="#">Grape</a></h6>
                                 <h5>$30.00</h5>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 product__item">
                             <div class="product__item__pic set-bg" data-setbg="img/product/product-5.jpg">
+                                <a href="/product-details.html" class="product__item__link"></a>
                                 <ul class="product__item__pic__hover">
                                     <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><button onclick="addToCart('Hamburger', 'img/product/product-5.jpg', 30)"><i class="fa fa-shopping-cart"></i></button></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
-                                <h6><a href="#">Crab Pool Security</a></h6>
+                                <h6><a href="#">Hamburger</a></h6>
                                 <h5>$30.00</h5>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 product__item">
                             <div class="product__item__pic set-bg" data-setbg="img/product/product-6.jpg">
+                                <a href="/product-details.html" class="product__item__link"></a>
                                 <ul class="product__item__pic__hover">
                                     <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><button onclick="addToCart('Mango', 'img/product/product-6.jpg', 30)"><i class="fa fa-shopping-cart"></i></button></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
-                                <h6><a href="#">Crab Pool Security</a></h6>
+                                <h6><a href="#">Mango</a></h6>
                                 <h5>$30.00</h5>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 product__item">
                             <div class="product__item__pic set-bg" data-setbg="img/product/product-7.jpg">
+                                <a href="/product-details.html" class="product__item__link"></a>
                                 <ul class="product__item__pic__hover">
                                     <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><button onclick="addToCart('Watermelon', 'img/product/product-7.jpg', 30)"><i class="fa fa-shopping-cart"></i></button></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
-                                <h6><a href="#">Crab Pool Security</a></h6>
+                                <h6><a href="#">Watermelon</a></h6>
                                 <h5>$30.00</h5>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 product__item">
                             <div class="product__item__pic set-bg" data-setbg="img/product/product-8.jpg">
+                                <a href="/product-details.html" class="product__item__link"></a>
                                 <ul class="product__item__pic__hover">
                                     <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><button onclick="addToCart('Apple', 'img/product/product-8.jpg', 30)"><i class="fa fa-shopping-cart"></i></button></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
-                                <h6><a href="#">Crab Pool Security</a></h6>
+                                <h6><a href="#">Apple</a></h6>
                                 <h5>$30.00</h5>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 product__item">
                             <div class="product__item__pic set-bg" data-setbg="img/product/product-9.jpg">
+                                <a href="/product-details.html" class="product__item__link"></a>
                                 <ul class="product__item__pic__hover">
                                     <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><button onclick="addToCart('Plum', 'img/product/product-9.jpg', 30)"><i class="fa fa-shopping-cart"></i></button></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
-                                <h6><a href="#">Crab Pool Security</a></h6>
+                                <h6><a href="#">Plum</a></h6>
                                 <h5>$30.00</h5>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 product__item">
                             <div class="product__item__pic set-bg" data-setbg="img/product/product-10.jpg">
+                                <a href="/product-details.html" class="product__item__link"></a>
                                 <ul class="product__item__pic__hover">
                                     <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><button onclick="addToCart('Fried Chicken', 'img/product/product-10.jpg', 30)"><i class="fa fa-shopping-cart"></i></button></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
-                                <h6><a href="#">Crab Pool Security</a></h6>
+                                <h6><a href="#">Fried Chicken</a></h6>
                                 <h5>$30.00</h5>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 product__item">
                             <div class="product__item__pic set-bg" data-setbg="img/product/product-11.jpg">
+                                <a href="/product-details.html" class="product__item__link"></a>
                                 <ul class="product__item__pic__hover">
                                     <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><button onclick="addToCart('Fruit Milk', 'img/product/product-11.jpg', 30)"><i class="fa fa-shopping-cart"></i></button></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
-                                <h6><a href="#">Crab Pool Security</a></h6>
+                                <h6><a href="#">Fruit Milk</a></h6>
                                 <h5>$30.00</h5>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6 product__item">
                             <div class="product__item__pic set-bg" data-setbg="img/product/product-12.jpg">
+                                <a href="/product-details.html" class="product__item__link"></a>
                                 <ul class="product__item__pic__hover">
                                     <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                    <li><button onclick="addToCart('Fruit', 'img/product/product-12.jpg', 30)"><i class="fa fa-shopping-cart"></i></button></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
-                                <h6><a href="#">Crab Pool Security</a></h6>
+                                <h6><a href="#">Fruit</a></h6>
                                 <h5>$30.00</h5>
                             </div>
                         </div>
@@ -765,10 +777,8 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/cart.js"></script>
     <script src="js/main.js"></script>
-
-
-
 </body>
 
 </html>
