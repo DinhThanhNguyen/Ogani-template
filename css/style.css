@@ -1377,6 +1377,11 @@ ol {
 	color: #1c1c1c;
 }
 
+.product__discount__item__text h5 a:hover {
+	color: #7fad39;
+	transition: color .3s linear;
+}
+
 .product__discount__item__text .product__item__price {
 	font-size: 18px;
 	color: #1c1c1c;
@@ -1646,6 +1651,11 @@ ol {
 
 .product__item__text h6 a {
 	color: #252525;
+}
+
+.product__item__text h6 a:hover {
+	color: #7fad39;
+	transition: color .3s linear;
 }
 
 .product__item__text h5 {

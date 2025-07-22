@@ -94,10 +94,5 @@ function removeFromCart(index) {
     displayCart();
 }
 
-function clearCart() {
-    localStorage.removeItem('cart');
-    displayCart();
-}
-
 // Tải lại giỏ hàng khi load trang
 window.onload = displayCart;
