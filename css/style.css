@@ -885,7 +885,35 @@ ol {
 	transform: rotate(360deg);
 }
 
+.featured__item__pic__hover li:hover button {
+	background: #7fad39;
+	border-color: #7fad39;
+}
+
+.featured__item__pic__hover li:hover button i {
+	color: #ffffff;
+	transform: rotate(360deg);
+}
+
 .featured__item__pic__hover li a {
+	font-size: 16px;
+	color: #1c1c1c;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid #ebebeb;
+	background: #ffffff;
+	display: block;
+	border-radius: 50%;
+	-webkit-transition: all, 0.5s;
+	-moz-transition: all, 0.5s;
+	-ms-transition: all, 0.5s;
+	-o-transition: all, 0.5s;
+	transition: all, 0.5s;
+}
+
+.featured__item__pic__hover li button {
 	font-size: 16px;
 	color: #1c1c1c;
 	height: 40px;
@@ -913,6 +941,16 @@ ol {
 	transition: all, 0.3s;
 }
 
+.featured__item__pic__hover li button i {
+	position: relative;
+	transform: rotate(0);
+	-webkit-transition: all, 0.3s;
+	-moz-transition: all, 0.3s;
+	-ms-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+}
+
 .featured__item__text {
 	text-align: center;
 	padding-top: 15px;
@@ -924,6 +962,11 @@ ol {
 
 .featured__item__text h6 a {
 	color: #252525;
+}
+
+.featured__item__text h6 a:hover {
+	color: #7fad39;
+	transition: all .3s linear;
 }
 
 .featured__item__text h5 {
@@ -1027,7 +1070,7 @@ ol {
 }
 
 .from-blog__title {
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 
 /*---------------------
@@ -2303,7 +2346,20 @@ ol {
 	padding-top: 15px;
 }
 
+.checkout__order .checkout__order__discount {
+	font-size: 18px;
+	color: #1c1c1c;
+	font-weight: 700;
+	border-bottom: 1px solid #e1e1e1;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
 .checkout__order .checkout__order__subtotal span {
+	float: right;
+}
+
+.checkout__order .checkout__order__discount span {
 	float: right;
 }
 
@@ -2966,6 +3022,44 @@ ol {
 .contact-form form button {
 	font-size: 18px;
 	letter-spacing: 2px;
+}
+
+#cartPopup {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: #fff;
+	padding: 16px 20px;
+	border-radius: 50%;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	z-index: 9999;
+	animation: fadeIn 0.3s ease;
+}
+
+#cartPopup a {
+	color: #000;
+	text-align: center;
+	font-size: 20px;
+}
+
+#cartPopup a span {
+    height: 20px;
+    width: 20px;
+    background: #7fad39;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    right: -4px;
+}
+
+#cartPopup:hover {
+	opacity: .8;
+	transition: all, 0.3s linear;
 }
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/

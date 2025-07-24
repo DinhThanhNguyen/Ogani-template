@@ -1,13 +1,12 @@
 'use strict';
 
 (function ($) {
-
     /*------------------
         Preloader
     --------------------*/
     $(window).on('load', function () {
-        $(".loader").fadeOut();
-        $("#preloder").delay(200).fadeOut("slow");
+        $('.loader').fadeOut();
+        $('#preloder').delay(200).fadeOut('slow');
 
         /*------------------
             Gallery filter
@@ -31,30 +30,30 @@
     });
 
     //Humberger Menu
-    $(".humberger__open").on('click', function () {
-        $(".humberger__menu__wrapper").addClass("show__humberger__menu__wrapper");
-        $(".humberger__menu__overlay").addClass("active");
-        $("body").addClass("over_hid");
+    $('.humberger__open').on('click', function () {
+        $('.humberger__menu__wrapper').addClass('show__humberger__menu__wrapper');
+        $('.humberger__menu__overlay').addClass('active');
+        $('body').addClass('over_hid');
     });
 
-    $(".humberger__menu__overlay").on('click', function () {
-        $(".humberger__menu__wrapper").removeClass("show__humberger__menu__wrapper");
-        $(".humberger__menu__overlay").removeClass("active");
-        $("body").removeClass("over_hid");
+    $('.humberger__menu__overlay').on('click', function () {
+        $('.humberger__menu__wrapper').removeClass('show__humberger__menu__wrapper');
+        $('.humberger__menu__overlay').removeClass('active');
+        $('body').removeClass('over_hid');
     });
 
     /*------------------
         Navigation
     --------------------*/
-    $(".mobile-menu").slicknav({
+    $('.mobile-menu').slicknav({
         prependTo: '#mobile-menu-wrap',
-        allowParentLinks: true
+        allowParentLinks: true,
     });
 
     /*-----------------------
         Categories Slider
     ------------------------*/
-    $(".categories__slider").owlCarousel({
+    $('.categories__slider').owlCarousel({
         loop: true,
         margin: 0,
         items: 4,
@@ -67,7 +66,6 @@
         autoHeight: false,
         autoplay: true,
         responsive: {
-
             0: {
                 items: 1,
             },
@@ -82,10 +80,9 @@
 
             992: {
                 items: 4,
-            }
-        }
+            },
+        },
     });
-
 
     $('.hero__categories__all').on('click', function () {
         $('.hero__categories ul').slideToggle(400);
@@ -94,7 +91,7 @@
     /*--------------------------
         Latest Product Slider
     ----------------------------*/
-    $(".latest-product__slider").owlCarousel({
+    $('.latest-product__slider').owlCarousel({
         loop: true,
         margin: 0,
         items: 1,
@@ -103,13 +100,13 @@
         navText: ["<span class='fa fa-angle-left'><span/>", "<span class='fa fa-angle-right'><span/>"],
         smartSpeed: 1200,
         autoHeight: false,
-        autoplay: true
+        autoplay: true,
     });
 
     /*-----------------------------
         Product Discount Slider
     -------------------------------*/
-    $(".product__discount__slider").owlCarousel({
+    $('.product__discount__slider').owlCarousel({
         loop: true,
         margin: 0,
         items: 3,
@@ -118,7 +115,6 @@
         autoHeight: false,
         autoplay: true,
         responsive: {
-
             320: {
                 items: 1,
             },
@@ -133,29 +129,29 @@
 
             992: {
                 items: 3,
-            }
-        }
+            },
+        },
     });
 
     /*---------------------------------
         Product Details Pic Slider
     ----------------------------------*/
-    $(".product__details__pic__slider").owlCarousel({
+    $('.product__details__pic__slider').owlCarousel({
         loop: true,
         margin: 20,
         items: 4,
         dots: true,
         smartSpeed: 1200,
         autoHeight: false,
-        autoplay: true
+        autoplay: true,
     });
 
     /*-----------------------
         Price Range Slider
     ------------------------ */
-    var rangeSlider = $(".price-range"),
-        minamount = $("#minamount"),
-        maxamount = $("#maxamount"),
+    var rangeSlider = $('.price-range'),
+        minamount = $('#minamount'),
+        maxamount = $('#maxamount'),
         minPrice = rangeSlider.data('min'),
         maxPrice = rangeSlider.data('max');
     rangeSlider.slider({
@@ -166,26 +162,25 @@
         slide: function (event, ui) {
             minamount.val('$' + ui.values[0]);
             maxamount.val('$' + ui.values[1]);
-        }
+        },
     });
-    minamount.val('$' + rangeSlider.slider("values", 0));
-    maxamount.val('$' + rangeSlider.slider("values", 1));
+    minamount.val('$' + rangeSlider.slider('values', 0));
+    maxamount.val('$' + rangeSlider.slider('values', 1));
 
     /*--------------------------
         Select
     ----------------------------*/
-    $("select").niceSelect();
+    $('select').niceSelect();
 
     /*------------------
         Single Product
     --------------------*/
     $('.product__details__pic__slider img').on('click', function () {
-
         var imgurl = $(this).data('imgbigurl');
         var bigImg = $('.product__details__pic__item--large').attr('src');
         if (imgurl != bigImg) {
             $('.product__details__pic__item--large').attr({
-                src: imgurl
+                src: imgurl,
             });
         }
     });
@@ -212,6 +207,18 @@
         $button.parent().find('input').val(newVal);
     });
 
+    $(window).on('scroll', function () {
+        var scrollTop = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        var footerTop = $('.footer').offset().top;
+
+        // Điều kiện để hiện nút
+        if (scrollTop + windowHeight < footerTop) {
+            $('#cartPopup').fadeIn();
+        } else {
+            $('#cartPopup').fadeOut();
+        }
+    });
 })(jQuery);
 
 function validateFormCheckout() {
@@ -234,10 +241,10 @@ function validateFormCheckout() {
         ],
         onSubmit: function (data) {
             //Call API
-            console.log(data)
-            alert('Send message success. We will contact with your nearly!')
-        }
-    })
+            console.log(data);
+            alert('Send message success. We will contact with your nearly!');
+        },
+    });
 }
 function validateContact() {
     Validator({
@@ -251,14 +258,14 @@ function validateContact() {
         ],
         onSubmit: function (data) {
             //Call API
-            console.log(data)
-            alert('Send message success. We will contact with your nearly!')
-        }
-    })
+            console.log(data);
+            alert('Send message success. We will contact with your nearly!');
+        },
+    });
 }
-if($('#form-checkout').length) {
-    validateFormCheckout()
+if ($('#form-checkout').length) {
+    validateFormCheckout();
 }
-if($('#form-contact').length) {
-    validateContact()
+if ($('#form-contact').length) {
+    validateContact();
 }

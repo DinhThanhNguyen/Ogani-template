@@ -46,7 +46,7 @@
         <div class="humberger__menu__cart">
             <ul>
                 <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                <li><a href="/shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                <li><a href="/shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span class="header__cart__number"></span></a></li>
             </ul>
             <div class="header__cart__price">item: <span>$150.00</span></div>
         </div>
@@ -68,14 +68,8 @@
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/shop-grid.html">Shop</a></li>
-                <li>Pages
-                    <ul class="header__menu__dropdown">
-                        <li><a href="/product-details.html">Shop Details</a></li>
-                        <li><a href="/shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="/checkout.html">Check Out</a></li>
-                    </ul>
-                </li>
                 <li><a href="/contact.html">Contact</a></li>
+                <li><a href="#">Blog</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -134,14 +128,8 @@
                         <ul>
                             <li><a href="/index.html">Home</a></li>
                             <li><a href="/shop-grid.html">Shop</a></li>
-                            <li><a href="#">Pages</a>
-                                <ul class="header__menu__dropdown">
-                                    <li><a href="/product-details.html">Shop Details</a></li>
-                                    <li><a href="/shoping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="/checkout.html">Check Out</a></li>
-                                </ul>
-                            </li>
                             <li><a href="/contact.html">Contact</a></li>
+                            <li><a href="#">Blog</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -149,7 +137,7 @@
                     <div class="header__cart">
                         <ul>
                             <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="/shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                            <li><a href="/shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span class="header__cart__number"></span></a></li>
                         </ul>
                         <div class="header__cart__price">item: <span>$150.00</span></div>
                     </div>
@@ -335,6 +323,10 @@
     </footer>
     <!-- Footer Section End -->
 
+    <div id="cartPopup">
+        <a href="/shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span class="header__cart__number"></span></a>
+    </div>
+
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -345,8 +337,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/main.js"></script>
-
-
 </body>
 
 </html>
